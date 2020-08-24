@@ -15,6 +15,8 @@
 		E3C70E3824F16D740011C878 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3C70E3624F16D740011C878 /* LaunchScreen.storyboard */; };
 		E3C70E4324F16D750011C878 /* ConwayGameOfLifeSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C70E4224F16D750011C878 /* ConwayGameOfLifeSwiftUITests.swift */; };
 		E3C70E4E24F16D750011C878 /* ConwayGameOfLifeSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C70E4D24F16D750011C878 /* ConwayGameOfLifeSwiftUIUITests.swift */; };
+		E3F9BC6624F344A100674B0D /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F9BC6524F344A000674B0D /* Board.swift */; };
+		E3F9BC6824F344EC00674B0D /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F9BC6724F344EC00674B0D /* Cell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		E3C70E4924F16D750011C878 /* ConwayGameOfLifeSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConwayGameOfLifeSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3C70E4D24F16D750011C878 /* ConwayGameOfLifeSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConwayGameOfLifeSwiftUIUITests.swift; sourceTree = "<group>"; };
 		E3C70E4F24F16D750011C878 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3F9BC6524F344A000674B0D /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		E3F9BC6724F344EC00674B0D /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				E3C70E2B24F16D730011C878 /* AppDelegate.swift */,
 				E3C70E2D24F16D730011C878 /* SceneDelegate.swift */,
 				E3C70E2F24F16D730011C878 /* ContentView.swift */,
+				E3F9BC6524F344A000674B0D /* Board.swift */,
+				E3F9BC6724F344EC00674B0D /* Cell.swift */,
 				E3C70E3124F16D740011C878 /* Assets.xcassets */,
 				E3C70E3624F16D740011C878 /* LaunchScreen.storyboard */,
 				E3C70E3924F16D740011C878 /* Info.plist */,
@@ -268,6 +274,8 @@
 			files = (
 				E3C70E2C24F16D730011C878 /* AppDelegate.swift in Sources */,
 				E3C70E2E24F16D730011C878 /* SceneDelegate.swift in Sources */,
+				E3F9BC6824F344EC00674B0D /* Cell.swift in Sources */,
+				E3F9BC6624F344A100674B0D /* Board.swift in Sources */,
 				E3C70E3024F16D730011C878 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
