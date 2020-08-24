@@ -13,7 +13,7 @@ final class Board: ObservableObject {
     let rowsOfCells: [[Cell]]
     let allCells: [Cell]
     
-    private lazy var timer = Timer(timeInterval: 1.0, repeats: true) { [weak self] timer in
+    private lazy var timer = Timer(timeInterval: 0.8, repeats: true) { [weak self] timer in
         // Call this every second
         self?.next()
     }
@@ -72,7 +72,7 @@ final class Board: ObservableObject {
         }
         
         let liveCells = self.allCells.filter { $0.status == .alive }
-        let deadCells = self.allCells.filter { $0.status != .dead}
+        let deadCells = self.allCells.filter { $0.status == .dead}
         
         
         // If there are < 2, it will die
@@ -131,12 +131,12 @@ struct CellView: View {
     let status: Cell.Status
     
     var body: some View {
-        Text(status == .alive ? "🦠" : "✨")
+        Text(status == .alive ? "🦄" : "✨")
     }
 }
 
 struct ContentView: View {
-    @StateObject private var board = Board(rows: 10, cols: 10)
+    @StateObject private var board = Board(rows: 25, cols: 25)
     
     var body: some View {
         VStack {
