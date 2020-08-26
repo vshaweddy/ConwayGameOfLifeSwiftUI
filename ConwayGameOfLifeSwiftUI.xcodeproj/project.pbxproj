@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E3C1877D24F5F68D007708BF /* RulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C1877C24F5F68D007708BF /* RulesView.swift */; };
+		E3C1877F24F5F6BF007708BF /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C1877E24F5F6BF007708BF /* HistoryView.swift */; };
 		E3C70E2C24F16D730011C878 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C70E2B24F16D730011C878 /* AppDelegate.swift */; };
 		E3C70E2E24F16D730011C878 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C70E2D24F16D730011C878 /* SceneDelegate.swift */; };
 		E3C70E3024F16D730011C878 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C70E2F24F16D730011C878 /* ContentView.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E3C1877C24F5F68D007708BF /* RulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesView.swift; sourceTree = "<group>"; };
+		E3C1877E24F5F6BF007708BF /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		E3C70E2824F16D730011C878 /* ConwayGameOfLifeSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConwayGameOfLifeSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3C70E2B24F16D730011C878 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3C70E2D24F16D730011C878 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 				E3F9BC6924F43C3000674B0D /* AppView.swift */,
 				E3C70E2F24F16D730011C878 /* ContentView.swift */,
 				E3F9BC6B24F45BFD00674B0D /* AboutView.swift */,
+				E3C1877E24F5F6BF007708BF /* HistoryView.swift */,
+				E3C1877C24F5F68D007708BF /* RulesView.swift */,
 				E3F9BC6524F344A000674B0D /* Board.swift */,
 				E3F9BC6724F344EC00674B0D /* Cell.swift */,
 				E3C70E3124F16D740011C878 /* Assets.xcassets */,
@@ -278,6 +284,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3C1877F24F5F6BF007708BF /* HistoryView.swift in Sources */,
+				E3C1877D24F5F68D007708BF /* RulesView.swift in Sources */,
 				E3C70E2C24F16D730011C878 /* AppDelegate.swift in Sources */,
 				E3F9BC6C24F45BFD00674B0D /* AboutView.swift in Sources */,
 				E3C70E2E24F16D730011C878 /* SceneDelegate.swift in Sources */,
