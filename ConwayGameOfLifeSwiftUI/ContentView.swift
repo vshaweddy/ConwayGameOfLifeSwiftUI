@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var board = Board(rows: 25, cols: 25)
+    @StateObject private var board = Board(rows: 10, cols: 10)
     
     var body: some View {
         VStack {
@@ -21,7 +21,7 @@ struct ContentView: View {
             Button(action: {
                 board.start()
             }, label: {
-                Text("Start")
+                Text(board.isRunning ? "Reset" : "Start")
             })
             .padding()
         }

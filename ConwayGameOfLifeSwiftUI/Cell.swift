@@ -26,10 +26,10 @@ final class Cell: Identifiable {
         (row, col)
     }
     
-    init(row: Int, col: Int) {
+    init(row: Int, col: Int, status: Status) {
         self.row = row
         self.col = col
-        self.status = [Cell.Status.dead, .alive].randomElement() ?? .dead
+        self.status = status
     }
 }
 
