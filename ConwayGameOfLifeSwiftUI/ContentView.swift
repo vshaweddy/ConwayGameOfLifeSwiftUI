@@ -8,22 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var board = Board(rows: 10, cols: 10)
+    @StateObject private var board = Board(rows: 25, cols: 25)
     
     var body: some View {
-        VStack {
-            LazyVGrid(columns: board.columns) {
-                ForEach(board.allCells, id: \.id) { cell in
-                    CellView(status: cell.status)
+        NavigationView {
+            VStack {
+                LazyVGrid(columns: board.columns, spacing: 5) {
+                    ForEach(board.allCells, id: \.id) { cell in
+                        CellView(status: cell.status)
+                    }
                 }
-            }
-            
-            Button(action: {
-                board.start()
-            }, label: {
-                Text(board.isRunning ? "Reset" : "Start")
-            })
-            .padding()
+                
+                Button(action: {
+                    board.start()
+                }, label: {
+                    Text(board.isRunning ? "Reset" : "Start")
+                })
+                .padding()
+            }.navigationBarTitle(Text("Game of Life"))
         }
     }
 }

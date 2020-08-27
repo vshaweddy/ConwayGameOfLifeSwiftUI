@@ -37,6 +37,6 @@ struct CellView: View {
     let status: Cell.Status
     
     var body: some View {
-        Text(status == .alive ? "🦄" : "✨").font(.system(size: 12))
+        Rectangle(color: status == .alive ? Color.red : .blue)
     }
 }

@@ -36,7 +36,6 @@ final class Board: ObservableObject {
             
             rowsOfCells.append(tempRow)
         }
-        
 
         self.allCells = allCells
         self.rowsOfCells = rowsOfCells
@@ -103,6 +102,12 @@ final class Board: ObservableObject {
 
 extension Board {
     var columns: [GridItem] {
-        [GridItem](repeating: GridItem(.fixed(20)), count: cols)
+        [GridItem](repeating: GridItem(.fixed(5)), count: cols)
+    }
+}
+
+struct Board_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
 }

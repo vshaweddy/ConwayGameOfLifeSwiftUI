@@ -13,9 +13,6 @@ struct AppView: View {
     var body: some View {
         TabView(selection: $selectedTab) {
             ContentView()
-                .onTapGesture {
-                    self.selectedTab = 1
-                }
                 .tabItem {
                     Image(systemName: "list.dash")
                     Text("Board")
