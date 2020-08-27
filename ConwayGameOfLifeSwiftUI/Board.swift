@@ -14,10 +14,7 @@ final class Board: ObservableObject {
     let allCells: [Cell]
     var isRunning = false
     
-    private lazy var timer = Timer(timeInterval: 0.8, repeats: true) { [weak self] timer in
-        // Call this every second
-        self?.next()
-    }
+    var timer: Timer?
     
     init(rows: Int, cols: Int) {
         self.rows = rows
@@ -48,8 +45,19 @@ final class Board: ObservableObject {
         
         if !isRunning {
             isRunning = true
-            RunLoop.current.add(timer, forMode: .common)
+            self.createTimer(timeInterval: 0.5)
         }
+    }
+    
+    func createTimer(timeInterval: TimeInterval) {
+        timer?.invalidate()
+        let timer = Timer(timeInterval: timeInterval, repeats: true) { [weak self] timer in
+            // Call this every second
+            self?.next()
+        }
+        
+        RunLoop.current.add(timer, forMode: .common)
+        self.timer = timer
     }
     
     private func next() {
