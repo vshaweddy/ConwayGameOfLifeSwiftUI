@@ -14,14 +14,14 @@ struct AppView: View {
         TabView(selection: $selectedTab) {
             ContentView()
                 .tabItem {
-                    Image(systemName: "list.dash")
+                    Image(systemName: "circle.grid.2x2.fill")
                     Text("Board")
                 }
                 .tag(0)
 
             AboutView()
                 .tabItem {
-                    Image(systemName: "star")
+                    Image(systemName: "info.circle.fill")
                     Text("About")
                 }
                 .tag(1)
