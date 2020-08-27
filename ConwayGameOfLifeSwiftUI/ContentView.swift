@@ -36,8 +36,12 @@ struct ContentView: View {
                     board.start()
                 }, label: {
                     Text(board.isRunning ? "Reset" : "Start")
+                        .padding()
                 })
-                .padding()
+
+                .background(Color.yellow)
+                .foregroundColor(.white)
+                .cornerRadius(4.0)
             }.navigationBarTitle(Text("Game of Life"))
         }
     }
