@@ -111,7 +111,7 @@ final class Board: ObservableObject {
 
 extension Board {
     var columns: [GridItem] {
-        [GridItem](repeating: GridItem(.fixed(5)), count: cols)
+        [GridItem](repeating: GridItem(.fixed(10), spacing: 4), count: cols)
     }
 }
 

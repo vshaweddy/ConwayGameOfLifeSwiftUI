@@ -14,7 +14,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                LazyVGrid(columns: board.columns, spacing: 5) {
+                LazyVGrid(columns: board.columns, spacing: 4) {
                     ForEach(board.allCells, id: \.id) { cell in
                         CellView(status: cell.status)
                     }
