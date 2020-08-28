@@ -25,7 +25,7 @@ struct AppView: View {
                     Text("About")
                 }
                 .tag(1)
-        }
+        }.accentColor(.purple)
     }
 }
 
