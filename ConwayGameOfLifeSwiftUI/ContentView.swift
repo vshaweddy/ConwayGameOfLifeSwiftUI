@@ -30,19 +30,20 @@ struct ContentView: View {
                     }), in: 0...1, step: 0.1)
                         .accentColor(.green)
                     Image(systemName: "plus")
-                }.padding(20).foregroundColor(.green)
+                }.padding(10).foregroundColor(.green)
                 
                 Button(action: {
                     board.start()
                 }, label: {
                     Text(board.isRunning ? "Reset" : "Start")
+                        .fontWeight(.bold)
                         .padding()
+                        .frame(width: 300, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 })
-
                 .background(Color.yellow)
                 .foregroundColor(.white)
-                .cornerRadius(4.0)
-            }.navigationBarTitle(Text("Game of Life"))
+                .cornerRadius(6.0)
+            }.navigationBarTitle(Text("Game of Life")).padding(10)
         }
     }
 }
