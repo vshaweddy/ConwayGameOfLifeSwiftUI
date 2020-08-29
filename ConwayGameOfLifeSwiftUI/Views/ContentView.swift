@@ -30,7 +30,7 @@ struct ContentView: View {
                     }), in: 0...1, step: 0.1)
                         .accentColor(.green)
                     Image(systemName: "plus")
-                }.padding(10).foregroundColor(.green)
+                }.padding(20).foregroundColor(.green)
                 
                 Button(action: {
                     board.start()
