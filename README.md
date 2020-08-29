@@ -7,3 +7,7 @@ The Game of Life, also known simply as Life, is a cellular automaton devised by 
 - Any live cell with two or three live neighbours survives.
 - Any dead cell with three live neighbours becomes a live cell.
 - All other live cells die in the next generation. Similarly, all other dead cells stay dead.
+
+## Preview
+![wireframe](resources/gol-1.png)
+![wireframe](resources/gol-2.png)
