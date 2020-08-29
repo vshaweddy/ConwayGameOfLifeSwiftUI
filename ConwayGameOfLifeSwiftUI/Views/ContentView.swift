@@ -14,7 +14,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                LazyVGrid(columns: board.columns, spacing: 5) {
+                LazyVGrid(columns: board.columns, spacing: 4) {
                     ForEach(board.allCells, id: \.id) { cell in
                         CellView(status: cell.status)
                     }
@@ -36,9 +36,14 @@ struct ContentView: View {
                     board.start()
                 }, label: {
                     Text(board.isRunning ? "Reset" : "Start")
+                        .fontWeight(.bold)
+                        .padding()
+                        .frame(width: 300, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 })
-                .padding()
-            }.navigationBarTitle(Text("Game of Life"))
+                .background(Color.yellow)
+                .foregroundColor(.white)
+                .cornerRadius(6.0)
+            }.navigationBarTitle(Text("Game of Life")).padding(10)
         }
     }
 }

@@ -11,7 +11,7 @@ struct Rectangle: View {
     let color: Color
     
     var body: some View {
-        RoundedRectangle(cornerRadius: 5.0)
+        Circle()
             .fill(color)
             .frame(width: 10, height: 10)
         

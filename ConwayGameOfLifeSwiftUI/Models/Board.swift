@@ -51,7 +51,8 @@ final class Board: ObservableObject {
     
     func createTimer(timeInterval: TimeInterval) {
         timer?.invalidate()
-        let timer = Timer(timeInterval: timeInterval, repeats: true) { [weak self] timer in
+        // 1 - is to reverse the value on the slider
+        let timer = Timer(timeInterval: 1 - timeInterval, repeats: true) { [weak self] timer in
             // Call this every second
             self?.next()
         }
@@ -110,7 +111,7 @@ final class Board: ObservableObject {
 
 extension Board {
     var columns: [GridItem] {
-        [GridItem](repeating: GridItem(.fixed(5)), count: cols)
+        [GridItem](repeating: GridItem(.fixed(10), spacing: 4), count: cols)
     }
 }
 
