@@ -93,7 +93,6 @@
 		E3319BE424F9DB5800BA852B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E30C28B124F6DD1F0081AE8D /* Rectangle.swift */,
 				E3F9BC6724F344EC00674B0D /* Cell.swift */,
 				E3F9BC6524F344A000674B0D /* Board.swift */,
 			);
@@ -106,6 +105,7 @@
 				E3F9BC6924F43C3000674B0D /* AppView.swift */,
 				E3C70E2F24F16D730011C878 /* ContentView.swift */,
 				E3F9BC6B24F45BFD00674B0D /* AboutView.swift */,
+				E30C28B124F6DD1F0081AE8D /* Rectangle.swift */,
 				E3C1877E24F5F6BF007708BF /* HistoryView.swift */,
 				E3C1877C24F5F68D007708BF /* RulesView.swift */,
 			);

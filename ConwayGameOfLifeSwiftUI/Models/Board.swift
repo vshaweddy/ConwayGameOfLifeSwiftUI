@@ -23,6 +23,7 @@ final class Board: ObservableObject {
         var allCells = [Cell]()
         var rowsOfCells = [[Cell]]()
         
+        // create the grid of cells as a default
         for row in 0..<rows {
             var tempRow = [Cell]()
             for col in 0..<cols {
@@ -57,8 +58,8 @@ final class Board: ObservableObject {
             self?.next()
         }
         
-        RunLoop.current.add(timer, forMode: .common)
-        self.timer = timer
+        RunLoop.current.add(timer, forMode: .common) // start the timer
+        self.timer = timer // to have reference
     }
     
     private func next() {
@@ -89,7 +90,6 @@ final class Board: ObservableObject {
         
         let liveCells = self.allCells.filter { $0.status == .alive }
         let deadCells = self.allCells.filter { $0.status == .dead}
-        
         
         // If there are < 2, it will die
         // If there are > 3, it will die

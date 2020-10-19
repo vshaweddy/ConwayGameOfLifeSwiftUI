@@ -15,6 +15,7 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 LazyVGrid(columns: board.columns, spacing: 4) {
+                    // LazyVGrid requires unique id for every single cell
                     ForEach(board.allCells, id: \.id) { cell in
                         CellView(status: cell.status)
                     }
